@@ -30,7 +30,7 @@ export class SigninComponent {
     if(this.authservice.verifysignindata(signindata)){
       this.isViewVisible = true; 
       console.log('signin successfull');
-      this.router.navigate(['/home']);
+      this.router.navigate(['/homepage']);
     }else{
       console.log('invalid');
       this.isViewVisible = false;

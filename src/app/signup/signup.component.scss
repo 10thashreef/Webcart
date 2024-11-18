@@ -1,0 +1,23 @@
+.container-fluid{
+    background-color: rgb(139, 202, 227);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(236, 236, 246);
+    box-shadow: 4px 4px 12px rgba(0.4, 0.4, 0.4, 0.4);
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.text-size{
+    font-size: 12px;
+}
+.btn{
+    margin-top: 20px;
+}

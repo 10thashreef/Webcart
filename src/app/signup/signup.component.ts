@@ -39,7 +39,7 @@ export class SignupComponent {
     const signupdata = this.applyform.value
     this.authservice.savesignupdata(signupdata);
     console.log('signup succesful', signupdata);
-    this.router.navigate(['/home'])
+    this.router.navigate(['/homepage'])
     }else {
       console.log('Form is invalid');
     }

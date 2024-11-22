@@ -1,0 +1,130 @@
+body{
+    background-color: #F1F2F4;
+    overflow-x: hidden;
+}
+.title{
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    font-weight: 500;
+}
+.fullbox{
+    width: 480px;
+    height: 500px;
+    background-color: aqua;
+    gap: 20px;
+}
+img {
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    margin-top: -15px;
+}
+.terms{
+    height: auto;
+    width: 90vw;
+    background-color: #EFEFEF;
+    padding-bottom: 20px;
+}
+.condition{
+    height: auto;
+    width: 100vw;
+    background-color: #000;
+    padding-bottom: 15px;
+}
+.normal-link {
+    color: #F1F2F4;
+    text-decoration: none; 
+  }
+
+  .normal-link:hover {
+    color: inherit;
+  }
+  .head1{
+    color: #c5c5c5;
+  }
+  .paracolor{
+    color: #565656;
+  }
+  .card-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .card-one, .card-two, .card-three {
+    flex: 1;
+    padding: 20px;
+    color: white;
+  }
+  
+  
+  
+  .card-two {
+    background-color: #ffffff;;
+  }
+  
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+  }
+  
+  .grid-item {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .item-img {
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  
+  .text-success {
+    color: #155215; 
+  }
+  .card-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .card-five {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .card-four {
+    background-color: green;
+    flex: 2;
+    flex-wrap: wrap;
+    background-image: url("/Samsung-Galaxy-S24-Ultra.jpg");
+    background-size: cover;background-position: center;background-repeat: no-repeat;
+  }
+  @media (max-width: 768px) {
+    .card-box2 {
+      flex-direction: column; 
+    }
+  }

@@ -11,27 +11,27 @@
   <div class="container-fluid" style="background-color: #FFFFFF;width:100vw;height: auto;">
     <div class="container" style="background-color: #fff;width:100vw;height: auto;">
       <div class="row">
-        <div class="col-sm-2 col-md-2" style="background-color: #FFFFFF;height: 60px;">
+        <div class="col-sm-2 col-md-2 top">
 
           <div class="logo"><img src="newlogo1.png" alt="logo"></div>
         </div>
-        <div class="col-sm-6 col-md-6 " style="background-color: #FFFFFF;height: 60px;">
+        <div class="col-sm-6 col-md-6 top">
           <input type="text" class="form-control mx-3" placeholder="Search for Products, Brands and More"
             style="max-width: 600px;margin-top: 10px;">
         </div>
-        <div class="col-sm-2 col-md-2" style="background-color: #FFFFFF;height: 60px;">
+        <div class="col-sm-2 col-md-2">
           <div class="center">
             <button type="button" (click)="account()" class="btn btn-outline"><img src="person.svg"
                 style="width: 30px;height: 30px;">&nbsp;Account</button>
           </div>
         </div>
-        <div class="col-sm-1 col-md-1" style="background-color: #FFFFFF;height: 60px;">
+        <div class="col-sm-1 col-md-1 top" >
           <div class="center">
             <button type="button" class="btn btn-outline " style="width: 250px;"><img src="shopping-cart.svg"
                 style="width: 30px;height: 30px;">Cart</button>
           </div>
         </div>
-        <div class="col-sm-1 col-md-1" style="background-color: #FFFFFF;height: 60px;">
+        <div class="col-sm-1 col-md-1 top" style="background-color: #FFFFFF;height: 60px;">
           <div class="center">
             <button type="button" class="btn btn-outline " style="width: 300px;"><img src="threedot.svg"
                 style="width: 20px;height: 30px;">More</button>
@@ -74,8 +74,8 @@
     <div class="row" style="margin-left: 50px;padding-bottom: 30px;">
       @for(x of productdetails; track x.name){
       <div
-        style="width: 200px;height:240px; background-color: #FFFFFF(140, 184, 193);border-radius: 10px;margin:10px 10px 0px 20px;border: 1px solid #EFEFEF;" (click)="navigateToDetails(x.id)">
-        <div class="container-fluid d-flex justify-content-center" style="width: 100px;height: 150px;margin-top: 15px;" >
+        style="width:200px;height:240px; background-color: #FFFFFF(140, 184, 193);border-radius: 10px;margin:10px 10px 0px 20px;border: 1px solid #EFEFEF;" (click)="navigateToDetails(x.id)">
+        <div class="container-fluid d-flex justify-content-center" style="width: auto;height: 150px;margin-top: 15px;" >
           <img [src]="x.name + '.jpeg'" alt="{{x.name}}">
         </div>
         <span class="d-block text-center fw-bold mt-3">{{x.name | titlecase}}</span>
@@ -84,7 +84,6 @@
       }
     </div>
   </div>
-
 
   <!-- second page -->
   <div class="container-fluid mt-2 " style="background-color: #efefef;">
@@ -106,7 +105,6 @@
      
     </div>
   </div>
-
 
   <!-- third page -->
   <div class="container-fluid mt-2" style="background: #efefef;">
@@ -149,7 +147,6 @@
       </div>
     </div>
 
-
     <!-- <fourth page> -->
     <div class="container-fluid " style="background-color: #EFEFEF;width:100vw;height: auto;">
       <div class="terms mt-3 ">
@@ -191,7 +188,6 @@
             for example, to count users who have visited those pages or opened an email and for other related website
             statistics</li>
         </ul>
-
 
       </div>
       <div class="condition">

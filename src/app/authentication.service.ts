@@ -354,15 +354,22 @@ cartdetails(id: any) {
     } else {
       console.log('Product not found or ID mismatch:', id);
     }
-<<<<<<< HEAD
+
   }
-=======
+
  
     arr:Type[] = [{
       photo: "Rahad.jpg",
       id: 0,
       name: '',
-      price: 0
+      price: 0,
+      reviews: 0,
+      ratings: 0,
+      rated: 0,
+      axis: 0,
+      hdfc: 0,
+      emi: 0,
+      warranty: 0
     }]
   
       senddata(){
@@ -370,7 +377,7 @@ cartdetails(id: any) {
       }
 
 
->>>>>>> 913ed1de8eb4198a7a5c879393b8318f11340d92
+
 }
 
 

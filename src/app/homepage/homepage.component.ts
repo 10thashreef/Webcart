@@ -35,18 +35,13 @@ logout(){
   console.log('logged out success');
   this.router.navigate(['/signin'])
 }
-<<<<<<< HEAD
+
 navigateToDetails(productid:number):void {
   this.router.navigate(['/productdetails'],{ state: { id: productid } });
   console.log('Navigating with state:', { id: productid });
-  
-
-=======
-navigateToDetails() {
-  this.router.navigate(['/productdetails']);
 }
 account(){  
-  this.router.navigate(['/userdata-combonant'])
->>>>>>> 913ed1de8eb4198a7a5c879393b8318f11340d92
+  this.router.navigate(['/userdata-combonant']);
 }
 }
+

@@ -166,4 +166,17 @@ export class AuthenticationService {
   productdetails(){
     return this.data
     }
+ 
+    arr:Type[] = [{
+      photo: "Rahad.jpg",
+      id: 0,
+      name: '',
+      price: 0
+    }]
+  
+      senddata(){
+        return this.arr
+      }
+
+
 }

@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { CommonModule,TitleCasePipe } from '@angular/common';
 import { AuthenticationService } from "../authentication.service";
 import { Type } from '../type';
-
+ 
 @Component({
   selector: 'app-homepage',
   standalone: true,
@@ -37,6 +37,8 @@ logout(){
 }
 navigateToDetails() {
   this.router.navigate(['/productdetails']);
-
+}
+account(){  
+  this.router.navigate(['/userdata-combonant'])
 }
 }

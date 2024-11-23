@@ -1,0 +1,37 @@
+<div class="loginbox">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="profile">
+      <div *ngFor="let x of data">
+              <img src={{x.photo}} class="rounded-circle me-3">
+      </div>
+      <h2 class="profile-name">Hello ,User</h2>
+    </div>
+    <nav class="menu"> 
+        <div class="menu-section">
+            <h3>MY ORDERS<span>🔽</span></h3>
+        </div>
+        <div class="menu-section">
+            <h3><span>👤</span> SETTINGS</h3>
+            <ul>
+              <li>
+                <a routerLink="child-a">Profile Information</a>
+              </li>
+              <li>
+                <a routerLink="child-b">Manage Addresses</a>
+              </li>
+              <li>
+                <a routerLink="child-c">PAN Card Information</a>
+              </li>
+            </ul>
+        </div>
+        <router-outlet></router-outlet>
+        <div class="menu-section">
+            <h3> <span></span>PAYMENTS</h3>
+            <ul>
+                <li><a href="#">logout</a></li> 
+            </ul>
+        </div>
+    </nav>
+  </div>
+</div> 

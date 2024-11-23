@@ -1,0 +1,82 @@
+
+.sidebar {
+  width: 250px;
+  height: 500px;
+  background-color: #fff;
+   border: 2px solid #ddd;
+  color: white;
+  padding: 20px;
+}
+
+/* img section */
+.profile {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.profile img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+ /* user name section */
+.profile-name {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+ /* Orders menu section */
+.menu {
+  padding: 20px 10px;
+}
+.menu-section {
+  margin-bottom: 28px;
+}
+.menu-section h3 {
+  font-size: 14px;
+  color: #828080;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+.menu-section li {
+  padding: 7px 15px;
+  color: #050505;
+  font-size: 14px;
+  font-weight: 300px;
+  cursor: pointer;
+}
+.menu-section li a {
+  text-decoration: none;
+  color: #0a0a0a;
+  display: block;
+}
+.menu-section li:hover {
+  background-color:#608fdb;
+}
+.amount {
+  float: right;
+  color: #888;
+}
+
+/* phne screen is 2 colums */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .main-content {
+    padding: 20px;
+  }
+}

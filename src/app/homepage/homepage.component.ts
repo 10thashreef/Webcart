@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { CommonModule,TitleCasePipe } from '@angular/common';
 import { AuthenticationService } from "../authentication.service";
 import { Type } from '../type';
-
+ 
 @Component({
   selector: 'app-homepage',
   standalone: true,
@@ -35,10 +35,18 @@ logout(){
   console.log('logged out success');
   this.router.navigate(['/signin'])
 }
+<<<<<<< HEAD
 navigateToDetails(productid:number):void {
   this.router.navigate(['/productdetails'],{ state: { id: productid } });
   console.log('Navigating with state:', { id: productid });
   
 
+=======
+navigateToDetails() {
+  this.router.navigate(['/productdetails']);
+}
+account(){  
+  this.router.navigate(['/userdata-combonant'])
+>>>>>>> 913ed1de8eb4198a7a5c879393b8318f11340d92
 }
 }

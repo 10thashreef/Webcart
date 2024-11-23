@@ -354,7 +354,23 @@ cartdetails(id: any) {
     } else {
       console.log('Product not found or ID mismatch:', id);
     }
+<<<<<<< HEAD
   }
+=======
+ 
+    arr:Type[] = [{
+      photo: "Rahad.jpg",
+      id: 0,
+      name: '',
+      price: 0
+    }]
+  
+      senddata(){
+        return this.arr
+      }
+
+
+>>>>>>> 913ed1de8eb4198a7a5c879393b8318f11340d92
 }
 
 

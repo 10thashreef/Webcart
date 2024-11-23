@@ -1,0 +1,87 @@
+.operating{
+    position:absolute;
+    left: 300px;
+    top: 20px;
+}
+
+.maincon {
+    background-color:#F5FAFF;
+    padding: 22px 60px;
+    width: 800px;
+    height: 520px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+  /* main heading font gap of inpt hdg */
+ 
+  header {
+    display: flex;
+    margin-bottom: 23px;
+  }
+  header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(26, 25, 25);
+  }
+  
+     /* edit button section */
+  .edit-btn {
+    padding: 3px 10px;
+    color: #2874f0; 
+    background-color: #F5FAFF;
+    border: none;
+    font-size: 12px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    left: 18px;
+  }
+  
+  .edit-btn:hover {
+    background-color:#f4f0f0;
+  }
+  
+   /* gap of heading and input &h font size ssection */
+  .profile-info form {
+    display: grid;
+    gap: 40px;
+  }
+  .form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input section */
+  .form-group input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  /* Genter section */
+
+  .gender{
+    color: rgb(26, 25, 25);
+  }
+  .gender-options label {
+    margin-right:35px;
+    color: gray;
+  }
+  
+  /* phne screen is 2 colums */
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+    }
+    
+    .main-content {
+      padding: 20px;
+    }
+  }
+  

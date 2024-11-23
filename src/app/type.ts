@@ -1,5 +1,17 @@
 export interface Type {
     id:number,
     name:string,
-    price:number
+    price:number,
+    reviews:number,
+    ratings:number,
+    rated:number,
+    axis:number,
+    hdfc:number
+    emi:number,
+    warranty:number
 }
+export interface CartItem {
+    product: { id: number; name: string }; 
+    quantity: number;
+  }
+

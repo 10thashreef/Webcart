@@ -40,8 +40,6 @@
       </div>
     </div>
   </div>
-
-
   <!-- carousel -->
   <div class="container-fluid mt-2" style="width:100vw;height: auto;">
     <div class="row ">
@@ -76,8 +74,8 @@
     <div class="row" style="margin-left: 50px;padding-bottom: 30px;">
       @for(x of productdetails; track x.name){
       <div
-        style="width: 200px;height:240px; background-color: #FFFFFF(140, 184, 193);border-radius: 10px;margin:10px 10px 0px 20px;border: 1px solid #EFEFEF;">
-        <div class="container-fluid d-flex justify-content-center" style="width: 100px;height: 150px;margin-top: 15px;" (click)="navigateToDetails()">
+        style="width: 200px;height:240px; background-color: #FFFFFF(140, 184, 193);border-radius: 10px;margin:10px 10px 0px 20px;border: 1px solid #EFEFEF;" (click)="navigateToDetails(x.id)">
+        <div class="container-fluid d-flex justify-content-center" style="width: 100px;height: 150px;margin-top: 15px;" >
           <img [src]="x.name + '.jpeg'" alt="{{x.name}}">
         </div>
         <span class="d-block text-center fw-bold mt-3">{{x.name | titlecase}}</span>
@@ -97,7 +95,7 @@
         <h4 class="text-dark">Top Picks,Best Prices!</h4>
         <div class="grid-container">
           @for (x of productdetails2; track x.name) {
-          <div class="grid-item" (click)="navigateToDetails()">
+          <div class="grid-item" (click)="navigateToDetails(x.id)">
             <img [src]=" x.name +'.jpeg' " alt="{{ x.name }}" class="item-img" /><br>
             <h5 class="text-dark text-center">{{ x.name }}</h5>
             <p class="text-success text-center">{{ x.price }}</p>
@@ -117,7 +115,7 @@
         <h4 class="text-dark">Best rated,Best price! </h4>
         <div class="grid-container">
           @for (x of productdetails3; track x.name) {
-          <div class="grid-item" (click)="navigateToDetails()">
+          <div class="grid-item" (click)="navigateToDetails(x.id)">
             <img [src]=" x.name +'.jpeg' " alt="{{ x.name }}" class="item-img" /><br>
             <h5 class="text-dark text-center">{{ x.name }}</h5>
             <p class="text-success text-center">{{ x.price }}</p>
@@ -129,7 +127,7 @@
         <h4 class="text-dark">Home Decor & Furnishing</h4>
         <div class="grid-container">
           @for (x of productdetails4; track x.name) {
-          <div class="grid-item" (click)="navigateToDetails()">
+          <div class="grid-item" (click)="navigateToDetails(x.id)">
             <img [src]=" x.name +'.jpeg' " alt="{{ x.name }}" class="item-img" /><br>
             <h5 class="text-dark text-center">{{ x.name }}</h5>
             <p class="text-success text-center">{{ x.price }}</p>    
@@ -141,7 +139,7 @@
         <h4 class="text-dark">Unlock More Discounts</h4>
         <div class="grid-container">
           @for (x of productdetails5; track x.name) {
-          <div class="grid-item" (click)="navigateToDetails()">
+          <div class="grid-item" (click)= "navigateToDetails(x.id)">
             <img [src]=" x.name +'.jpeg' " alt="{{ x.name }}" class="item-img" /><br>
             <h5 class="text-dark text-center">{{ x.name }}</h5>
             <p class="text-success text-center">{{ x.price }}</p>

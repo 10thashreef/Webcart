@@ -7,7 +7,7 @@ import { Type } from '../type';
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [CommonModule,TitleCasePipe],
+  imports: [CommonModule,TitleCasePipe,],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })
@@ -35,8 +35,10 @@ logout(){
   console.log('logged out success');
   this.router.navigate(['/signin'])
 }
-navigateToDetails() {
-  this.router.navigate(['/productdetails']);
+navigateToDetails(productid:number):void {
+  this.router.navigate(['/productdetails'],{ state: { id: productid } });
+  console.log('Navigating with state:', { id: productid });
+  
 
 }
 }

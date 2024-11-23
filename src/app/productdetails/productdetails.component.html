@@ -1,1 +1,34 @@
-<p>productdetails works!</p>
+<div class="full-page">
+    <div class="left-side">
+      <div class="image-container">
+        <img [src]="showDetails.name+'.jpeg'" alt={{showDetails.name}} class="images">
+        <div class="favorite-btn" (click)="toggleFavorite()" [ngClass]="{ 'active': isFavourite }">
+          <i>&hearts;</i>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="cart" (click)="addtocart(showDetails.id)" >add to cart</button>
+        <button class="buy">buy now</button>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="name">
+        <p>{{showDetails.name|titlecase}}</p>
+      </div>
+      <div class="rating">
+        <p><span class="rating-icon">4.4</span>{{showDetails.ratings}}Ratings&{{showDetails.reviews}}Reviews</p>
+      </div>
+      <div class="price">
+        <p> ₹{{showDetails.price}}</p>
+      </div>
+      <div class="offers">
+        <span class="offer">Available offers</span><br>
+        <p><img src="/offers-img.webp" alt="" class="offers-img">offer1:'{{showDetails.axis}}% Unlimited Cashback on Flipkart Axis Bank Credit Card',</p>
+        <p><img src="/offers-img.webp" alt="" class="offers-img">offer2:'Flat ₹{{showDetails.hdfc}} off on HDFC Bank Credit Card EMI',</p>
+        <p><img src="/emi-img.png" alt="" class="emi-img">   offer3:'Flat {{showDetails.emi}} off on 12 months EMI',</p>
+       <p> "{{showDetails.warranty}} Year  onsite warranty from the date of purchase. Warranty applicable on manufacturing defects only. Free one time installation support from Canon"</p>
+       
+      </div>
+    </div>
+   </div>
+

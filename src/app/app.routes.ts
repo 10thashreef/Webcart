@@ -7,6 +7,8 @@ import { UserdataComponent } from './userdata/userdata.component';
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 import { ChildCComponent } from './child-c/child-c.component';
+import { BtnconfirmComponent } from './btnconfirm/btnconfirm.component';
+import { ConfrimordComponent } from './confrimord/confrimord.component';
 
 export const routes: Routes = [
     {path:'signin',component:SigninComponent},
@@ -22,6 +24,11 @@ export const routes: Routes = [
         {path:'child-c',component:ChildCComponent},
        ]},
        
-        {path:'',redirectTo:'/userdata-combonant', pathMatch:'full'}
+        {path:'',redirectTo:'/userdata-combonant', pathMatch:'full'},
+
+        { path:'',component:HomepageComponent},
+        { path:'btnconfirm',component:BtnconfirmComponent},
+        { path:'confrimord',component:ConfrimordComponent},
+        {path:'',redirectTo:'/btnconfirm',pathMatch:'full'}
 
 ];

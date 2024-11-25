@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirmation-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.phone-frame {
+    width: 700px;;
+    height: 550px;
+    background-color: #f1f7ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.order-confirmation {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-check {
+    background-color: #08ae08;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.check-mark {
+    font-size: 36px;
+    color: white;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.done-btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.done-btn:hover {
+    background-color: #e65c00;
+}
+
+.character {
+    position: relative;
+    width: 100px;
+    height: 200px;
+}
+
+.speech-bubble {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f7ff;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+    font-size: 24px;
+}
+
+.bubble-check {
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+

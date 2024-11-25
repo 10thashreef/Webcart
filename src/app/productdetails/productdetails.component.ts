@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
 import { Type } from '../type';
 import { CommonModule,TitleCasePipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-productdetails',
   standalone: true,
-  imports: [CommonModule,TitleCasePipe],
+  imports: [CommonModule,TitleCasePipe,RouterLink],
   templateUrl: './productdetails.component.html',
   styleUrl: './productdetails.component.scss'
 })

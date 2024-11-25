@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-section {
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: fit-content;
+}
+
+.step-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.step-header .step-number {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.section {
+    padding: 20px;
+}
+
+.address-card {
+    background-color: #f1f7ff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+}
+
+.address-card.active {
+    border: 2px solid #007bff;
+}
+
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-header span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.address-header .edit {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.address-info {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.radio-button {
+    margin-right: 10px;
+}
+
+.btn-deliver {
+    display: block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-deliver:hover {
+    background-color: #e65c00;
+}
+
+.add-new-address {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.price-details {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.price-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.price-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.total-payable {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.savings {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.safe-secure {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}
+
+.confirm-btn {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #e65c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.confirm-btn:hover{
+    background-color:#db5f0c ;
+}
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-section,
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .confirm-btn {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-header .step-number {
+        margin-bottom: 10px;
+    }
+
+    .price-details p {
+        font-size: 12px;
+    }
+
+    .price-details h3 {
+        font-size: 16px;
+    }
+}

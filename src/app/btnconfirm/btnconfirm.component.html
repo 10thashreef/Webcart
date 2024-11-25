@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Delivery Address Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main Section -->
+        <div class="main-section">
+            <div class="step-header">
+                <div>
+                    <span class="step-number">1</span> LOGIN ✔
+                </div>
+                <button style="background: none; border: none; color: #007bff; cursor: pointer;">CHANGE</button>
+            </div>
+
+            <div class="section">
+                <div class="step-header">
+                    <span class="step-number">2</span> DELIVERY ADDRESS
+                </div>
+
+                <div class="address-card active">
+                    <div class="address-header">
+                        <div>
+                            <input type="radio" class="radio-button" checked>
+                            <span>Naveen</span> <span style="background: #e0e0e0; padding: 3px 5px; font-size: 12px; border-radius: 3px;">WORK</span> 6235923901
+                        </div>
+                        <span class="edit">EDIT</span>
+                    </div>
+                    <div class="address-info">
+                        swapnam, Valanchery edayoor, Malappuram District, Kerala - 676552<br>
+                        <span style="color: #ff6600;">Address details insufficient to attempt delivery. Continue with same address?</span>
+                    </div>
+                    <button class="btn-deliver">DELIVER HERE</button>
+                </div>
+
+                <div class="address-card">
+                    <div class="address-header">
+                        <div>
+                            <input type="radio" class="radio-button">
+                            <span>Naveendas</span> <span style="background: #e0e0e0; padding: 3px 5px; font-size: 12px; border-radius: 3px;">HOME</span> 6235923901
+                        </div>
+                    </div>
+                    <div class="address-info">
+                        169, Kodumunda thekechola, Muthuthala, Kerala - 679303
+                    </div>
+                </div>
+
+                <div class="add-new-address">+ Add a new address</div>
+            </div>
+
+            <div class="step-header">
+                <span class="step-number">3</span> ORDER SUMMARY
+            </div>
+
+            <div class="step-header">
+                <span class="step-number">4</span> PAYMENT OPTIONS
+            </div>
+        </div>
+
+        <!-- Sidebar for Price Details -->
+        <div class="sidebar">
+            <div class="price-details">
+                <h3>PRICE DETAILS</h3>
+                <p>Price (1 item) <span>₹{{stor[0].price}}</span></p>
+                <p>Delivery Charges <span style="color: green;">₹40 FREE</span></p>
+                <p>Platform Fee <span>₹0</span></p>
+                <div class="total-payable">
+                    Total Payable <span>₹{{stor[0].price}}</span>
+                </div>
+                <!-- <div class="savings">
+                    Your Total Savings on this order ₹1,897
+                </div> -->
+            </div>
+            <div class="safe-secure">
+                Safe and Secure Payments. Easy returns.<br>
+                100% Authentic products.
+            </div>
+            <button class="confirm-btn" ><a routerLink="/confrimord">Confirm Order</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
+
